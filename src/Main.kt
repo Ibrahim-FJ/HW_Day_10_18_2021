@@ -1,5 +1,9 @@
+import java.io.File
+
 fun main(){
-        // This is the first homework
+        // This is the homework number 1
+
+
     val city = mutableListOf("Riyadh","Jeddah", "Mekkah")
     city.addAll(listOf("Abha", "Maddina"))
     city[city.size-1] = "Dammam"
@@ -8,10 +12,12 @@ fun main(){
         println("$index - $data ")
 
     }
+    println("\n -----------------------------------------------")
 
     //---------------------------------------------------------------//
+                    // This is homework number 2
 
-    // This is homework number 2
+
     val integerNo = mutableListOf(10, 13, 6, 7, 9)
     integerNo[2] = 12
     println(integerNo)
@@ -23,5 +29,42 @@ fun main(){
         }
     }
     println(integerNo)
+    println("\n -----------------------------------------------")
+
+// ------------------------------------------------------------------------------------ //
+                        // optional homework part 1 //
+
+    // first I create a file named phone brand under data directory
+    println(File("data/phone brand.txt").readText())        // print the file named phone brand
+    println("\n -----------------------------------------------")
+
+//--------------------------------------------------------------------------------------//
+                       // optional homework part 2 //
+
+    val listOfNumbers = listOf(12, 6, 34, 8, 9, 3, 7, 20, 0, 23)
+    var index = 0
+
+    var number1 = listOfNumbers[index]
+    var number2 = listOfNumbers[index+1]
+
+    for (item in listOfNumbers){
+        if (index < 8){
+            index++
+            if (number1 >= number2){
+                number2 = listOfNumbers[index+1]
+
+            }else{
+                number1 = number2
+                number2 = listOfNumbers[index+1]
+
+            }
+
+        }else{
+            break
+        }
+
+    }
+    println("The maximum number = $number1")
+
 
 }
