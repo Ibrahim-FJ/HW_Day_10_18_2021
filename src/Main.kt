@@ -8,11 +8,11 @@ fun main(){
     city.addAll(listOf("Abha", "Maddina"))
     city[city.size-1] = "Dammam"
 
-    city.forEachIndexed{index, data ->
+    city.forEachIndexed{index, data ->     // for each to print the entire list
         println("$index - $data ")
 
     }
-    println("\n -----------------------------------------------")
+    println("\n -----------------------------------------------") // to separate the homework results in the consul
 
     //---------------------------------------------------------------//
                     // This is homework number 2
@@ -24,7 +24,7 @@ fun main(){
 
     for (item in integerNo){
         if (item == 12) {
-            integerNo.removeAt(integerNo.indexOf(item))
+            integerNo.removeAt(integerNo.indexOf(item))         //remove the specified element
             break
         }
     }
@@ -42,11 +42,12 @@ fun main(){
                        // optional homework part 2 //
 
     val listOfNumbers = listOf(12, 6, 34, 8, 9, 3, 7, 20, 0, 23)
-    var index = 0
+    var index = 0       // initialize the index
 
-    var number1 = listOfNumbers[index]
-    var number2 = listOfNumbers[index+1]
+    var number1 = listOfNumbers[index]          // this variable will take the first element
+    var number2 = listOfNumbers[index+1]         // this variable will take the first element
 
+    // this next code is to compare first element in the list with the next element and update the results
     for (item in listOfNumbers){
         if (index < 8){
             index++
