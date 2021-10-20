@@ -35,7 +35,8 @@ fun main(){
                         // optional homework part 1 //
 
     // first I create a file named phone brand under data directory
-    println(File("data/phone brand.txt").readText())        // print the file named phone brand
+
+    println(File("data/phone brand.txt").readLines())            // print the file named phone brand
     println("\n -----------------------------------------------")
 
 //--------------------------------------------------------------------------------------//
